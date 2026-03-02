@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencia de Viajes</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <H1>Reserva tu viaje</H1>
+    <form>
+        <section>
+        <h2>Datos personales</h2>
+       <label for="nombre">Nombre:</label> 
+       <input type="text" ide="nombre" name="nombre"><br><br>
+       <label for="email">Correo electronico:</label> 
+       <input type="email" ide="color" name="color" placeholder="example@email.com"><br><br>
+       <label for="telefono">Numero de telefono:</label>
+       <input type="number" name="telefono" id="telefono"><br><br>
+       </section><hr>
+    <section>
+        <h2>Datos del viaje</h2>
+        <label for="origen">Lugar de origen:</label> 
+       <input type="text" id="origen" name="origen" readonly value="San Salvador">
+        <label for="destino">Lugar de destino:</label> 
+       <select name="destino" id="destino">
+        <option value="1">Lauterbrunnen</option>
+        <option value="2">Florencia</option>
+        <option value="3">Barcelona</option>
+        <option value="4">Venecia</option>
+       </select>
+       <br><br>
+       <label for="viajeros">Numero de acompañantes:</label>
+       <input type="number" name="viajeros" id="viajeros" step="1" min="1" max="5"><br><br>
+       <label for="salida">Fecha de salida:</label>
+       <input type="date" name="salida" id="salida"><br><br>
+       <label for="regreso">Fecha de regreso:</label>
+       <input type="date" name="regreso" id="regreso"><br><br>
+    </section>
+       <input type="reset" value="Borrar">
+       <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
