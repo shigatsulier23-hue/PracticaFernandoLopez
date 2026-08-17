@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="texto"> Hola </h1>
+    <script>
+
+        let nombre, calificacion1, calificacion2, calificacion3;
+        let porcentaje1 = 0.30, porcentaje2 = 0.35, porcentaje3 = 0.35;
+       
+        nombre = prompt("Ingrese nombre del estudiante: ");
+        calificacion1 = Number(prompt("Ingrese la primera nota: (30%)"));
+        calificacion2 = Number(prompt("Ingrese la segunda nota: (35%)"));
+        calificacion3 = Number(prompt("Ingrese la tercera nota: (35%)"));
+
+        promedio = calificacion1*porcentaje1 + calificacion2*porcentaje2 + calificacion3*porcentaje3;
+
+        document.write("El promedio de notas ponderado de " + nombre +" es " + promedio);
+
+
+
+    </script>
+</body>
+</html>

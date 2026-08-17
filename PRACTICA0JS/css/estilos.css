@@ -1,0 +1,16 @@
+.parrafito{
+    background-color: blue;
+    color: aliceblue;
+}
+
+boton{
+    width: 100px;
+}
+
+.error{
+    background-color: palevioletred;
+}
+
+.exito{
+    background-color: chartreuse;
+}
