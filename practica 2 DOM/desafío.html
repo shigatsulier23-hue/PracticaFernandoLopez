@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío</title>
+<style>
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: 100px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    font-size: 50px;
+    transition: all 0.3s ease;
+}
+
+.glass {
+    color: white;
+    text-shadow:
+        0 0 10px #00d4ff,
+        0 0 20px #00d4ff,
+        0 0 40px #00d4ff;
+}
+
+.fire {
+    color: #ffdd00;
+    text-shadow:
+        0 0 5px #ff9900,
+        0 0 10px #ff6600,
+        0 0 20px #ff3300,
+        0 0 40px #ff0000;
+}
+
+.gradient {
+    background: linear-gradient(
+        90deg,
+        #ff00ff,
+        #00ffff,
+        #00ff00
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+    <h1 id="frase" class="glass">
+        El éxito es la suma de pequeños esfuerzos repetidos día tras día.
+    </h1>
+
+    <button onclick="cambiarEstilo('glass')">Glass</button>
+    <button onclick="cambiarEstilo('fire')">Fuego</button>
+    <button onclick="cambiarEstilo('gradient')">Degradado</button>
+
+<script src="JS/desafio.js"></script>
+
+</body>
+</html>
